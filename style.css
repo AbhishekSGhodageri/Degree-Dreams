@@ -422,7 +422,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(/images/header.jpg);
+        background-image: url(https://github.com/AbhishekSGhodageri/Degree-Dreams/blob/main/images/header.jpg?raw=true);
         background-size: cover;
     }
     .header-text{
