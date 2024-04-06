@@ -9,14 +9,14 @@ html{
 }
 
 body{
-    background: black;
-    color: white;
+    background: rgb(244, 242, 242);
+    color: rgb(7, 7, 7);
 }
 
 #header{
     width:100%;
     height: 100vh;
-    background-image: url(https://github.com/AbhishekSGhodageri/Degree-Dreams/blob/main/images/header.jpg?raw=true);
+    background-image: url(/images/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -112,86 +112,45 @@ nav ul li a:hover::after{
 
 }
 
-.row {
+.grid-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
+    flex-direction: column;
 }
 
-.about-col-1 {
-    flex-basis: 35%;
-}
-
-.about-col-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.about-col-2 {
-    flex-basis: 60%;
-
-}
-
-.subtitle {
-    font-size: 60px;
-    font-weight: 600;
-    color: white;
-}
-
-.subtitle p {
-    font-size: 12px;
-}
-
-.tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-.tab-links {
-    padding: 5px;
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    font-weight: 900;
-    color: aqua;
-    transition: transform 0.3s;
-    
-    border-radius: 25px;
-    background-color: rgb(63, 21, 21);
-}
-
-.tab-links:hover{
-    transform: scale(1.2);
+.about-us,
+.vision,
+.mission {
+    margin-bottom: 20px;
+    /* Optional: Add some space between each div */
 }
 
 
-
-
-
-
-.tab-contents ul {
-    margin: -15px 0;
+.about-us,.vision,
+.mission{
+    padding: 10px;
+    background-color: #e4a8a8;
+    height: 300px;
+    color: #333333;
+    border-radius: 20px;
 }
 
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-    font-size: 18px;
-    color: orange;
-   
-
+.grid-container p{
+    padding-top: 8px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-.tab-contents {
-    display: none;
+.about-us:hover,
+.vision:hover,
+.mission:hover {
+    background-color: #e58d8d;
+    transform: scale(1.01);
+    /* Scale the element by 20% on hover */
+    transition: transform 0.3s ease;
+    /* Smooth transition for scaling effect */
 }
 
-.tab-contents.active-tab {
-    display: block;
-}
+
 
 
 /*---------Services---
@@ -246,6 +205,14 @@ nav ul li a:hover::after{
 
 #services{
     padding: 50px 0;
+    background-color: #e58d8d;
+}
+.text{
+   
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding-left: 40%;
 }
 
 
@@ -318,6 +285,13 @@ nav ul li a:hover::after{
 }
 
 /*---contact--*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
 
 
 #contact{
@@ -422,7 +396,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(https://github.com/AbhishekSGhodageri/Degree-Dreams/blob/main/header%20-%20small.jpg?raw=true);
+        background-image: url(/images/header.jpg);
         background-size: cover;
     }
     .header-text{
@@ -439,12 +413,12 @@ nav .fas {
             font-size: 25px;
         }
     nav ul{
-        background: #ff004f;
-        position: fixed;
+        background: rgb(142, 142, 226);
+        position: absolute;
         top: 0;
         right: -300px;
-        width: 300px;
-        height: 100vh;
+        width: 100px;
+        height: 300px;
         padding-top: 50px;
         z-index: 2 ;
         transition: right 0.5s;
@@ -464,19 +438,21 @@ nav .fas {
     .subtitle{
         font-size: 40px;
     }
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
-    .about-col-1{
-        margin-bottom:30px ;
-    }
-    .about-col-2{
-        font-size: 14px;
-    }
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
-    }
+
+    
+.about-us p,.vision p,.mission p{
+    font-size: 15px;
+}
+
+   
+.text {
+    
+    padding: 5px;
+    
+
+}
+
+
     .contact-left,.contact-right{
         flex-basis: 100%;
     }
