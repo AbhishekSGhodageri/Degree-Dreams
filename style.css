@@ -19,13 +19,14 @@ body{
     background-image: url(https://github.com/AbhishekSGhodageri/Degree-Dreams/blob/main/images/headerbck.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgb(219, 109, 69);
     
     
 }
 
 
 .container{
-    padding: 10px 10%;
+    padding: 10px 5%;
 }
 
 nav{
@@ -43,6 +44,7 @@ nav{
 
 nav ul li{
     display: inline-block;
+    
     list-style: none;
     margin: 10px 20px;
     font-weight: bold;
@@ -84,8 +86,9 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 10%;
     font-size: 30px;
-    color: brown;
+    color: rgb(18, 16, 16);
     width: 500px;
+    font-weight: bolder;
     
 }
 
